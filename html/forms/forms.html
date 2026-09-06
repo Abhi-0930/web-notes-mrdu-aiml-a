@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Below is the example to create the palcement registration form with proper
+      validations
+    </p>
+
+    <br><br>
+    <center>Placement Registration Form</center>
+    <br>
+    <form action="formSuccess.html" method="post">
+      <label>Name: </label>
+      <input
+        type="text"
+        placeholder="enter your name"
+        minlength="4"
+        maxlength="8"
+        required
+      />
+
+      <br /><br />
+
+      <label>Email: </label>
+      <input type="email" required />
+
+      <br /><br />
+
+      <label>Password: </label>
+      <input type="password" minlength="6" maxlength="12" required />
+
+      <br /><br />
+
+      <label>Gender: </label>
+      <input type="radio" name="gender" /> Male
+      <input type="radio" name="gender" /> Female
+      <input type="radio" name="gender" /> Others
+
+      <br /><br />
+
+      <label>Select your department: </label>
+      <select required>
+        <option>CSE</option>
+        <option>AI</option>
+        <option>IT</option>
+        <option>AIML</option>
+        <option>ECE</option>
+        <option>EEE</option>
+      </select>
+
+      <br /><br />
+
+      <label>Upload Resume: </label>
+      <input type="file" accept=".pdf, .docx" required/>
+
+      <br /><br />
+
+      <label>Select skills</label> <br />
+      <input type="checkbox" /> HTML <br />
+      <input type="checkbox" /> CSS <br />
+      <input type="checkbox" /> JS <br />
+      <input type="checkbox" /> Python
+
+      <br /><br />
+
+      <label>Any questions, can enter: </label>
+      <textarea rows="5" cols="28" placeholder="type your suggestions below...">
+      </textarea>
+
+      <br><br>
+
+      <input type="checkbox" required> I accept all the form data entered is valid.
+
+      <br><br>
+
+      <input type="submit">
+      <button>Reset</button>
+    </form>
+  </body>
+</html>
